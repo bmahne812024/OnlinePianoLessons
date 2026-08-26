@@ -1,0 +1,149 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "84EBEFCC",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6476836769",
+    "_developerTeamID" : "DSLSLCKU24",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 739111400.09374797,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21448166",
+      "localizations" : [
+
+      ],
+      "name" : "OPLSubscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6478087454",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Subscription to Online Piano Lessons",
+              "displayName" : "Online Piano Lessons",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.brianmahne.opl.fullsub",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "OPLFullSubscription",
+          "subscriptionGroupID" : "21448166",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "119.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6503674431",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Full access paid anually",
+              "displayName" : "Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.brianmahne.opl.fullsubyearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "OPLFullSubscriptionYearly",
+          "subscriptionGroupID" : "21448166",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "subscriptionOffersKeyPair" : {
+    "id" : "5DA94262",
+    "privateKey" : "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgFcq0s7PQA738dulCXCPJgyCRRkpLF49LdHowICyOnVGgCgYIKoZIzj0DAQehRANCAAQnKWXJPanjbz8S3JkjMoIYuXCLgpS6SLWQNR7E+OuB5C1cIzto8L8wKmsFqf1ugdZ/pFDBvVDnt9t8tWyiRPBR"
+  },
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
