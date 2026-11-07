@@ -11,8 +11,7 @@
 		7E12069B2C0DF1E400BBFF27 /* Online Piano Lessons.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7E12069A2C0DF1E400BBFF27 /* Online Piano Lessons.storekit */; };
 		7E12069D2C0DF32900BBFF27 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7E12069C2C0DF32900BBFF27 /* StoreKitTestCertificate.cer */; };
 		7E1206A12C0E60BD00BBFF27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1206A02C0E60BD00BBFF27 /* ContentView.swift */; };
-		7E1378C02BEE226A00CCC297 /* Lesson 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1378BF2BEE226A00CCC297 /* Lesson 1.swift */; };
-		7E1378C22BEE234A00CCC297 /* Lesson 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1378C12BEE234A00CCC297 /* Lesson 2.swift */; };
+		7E1378C02BEE226A00CCC297 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1378BF2BEE226A00CCC297 /* LessonView.swift */; };
 		7E1378C42BEE26C600CCC297 /* VideoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1378C32BEE26C600CCC297 /* VideoViewer.swift */; };
 		7E22BBD82D7F7CDC00F6D4A6 /* ReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22BBD72D7F7CDC00F6D4A6 /* ReadingView.swift */; };
 		7E2E072F2BEC52E30040040A /* Online_Piano_LessonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E072E2BEC52E30040040A /* Online_Piano_LessonsApp.swift */; };
@@ -20,11 +19,9 @@
 		7E85E89C2BF8DF0500D509C8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E85E89B2BF8DF0500D509C8 /* Launch Screen.storyboard */; };
 		7E8A250C2C0D517E009B11DD /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8A250B2C0D517E009B11DD /* RevenueCat */; };
 		7E8A250E2C0D517E009B11DD /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8A250D2C0D517E009B11DD /* RevenueCatUI */; };
-		7EA4B32D2BF5914000B55F7D /* Lesson 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4B32C2BF5914000B55F7D /* Lesson 3.swift */; };
-		7EC59E8C2C13A87600837192 /* Lesson 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC59E8B2C13A87600837192 /* Lesson 4.swift */; };
 		7EF2807B2CC861B9001CDDF7 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2807A2CC861B2001CDDF7 /* LessonCard.swift */; };
-		7EF2807E2CC864C5001CDDF7 /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2807D2CC864A1001CDDF7 /* dataModel.swift */; };
-		7EF280802CC86593001CDDF7 /* data.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2807F2CC8658A001CDDF7 /* data.JSON */; };
+		7EF2807E2CC864C5001CDDF7 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2807D2CC864A1001CDDF7 /* Lesson.swift */; };
+		7EF280802CC86593001CDDF7 /* Lessons.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2807F2CC8658A001CDDF7 /* Lessons.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +30,7 @@
 		7E12069A2C0DF1E400BBFF27 /* Online Piano Lessons.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Online Piano Lessons.storekit"; sourceTree = "<group>"; };
 		7E12069C2C0DF32900BBFF27 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		7E1206A02C0E60BD00BBFF27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7E1378BF2BEE226A00CCC297 /* Lesson 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 1.swift"; sourceTree = "<group>"; };
-		7E1378C12BEE234A00CCC297 /* Lesson 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 2.swift"; sourceTree = "<group>"; };
+		7E1378BF2BEE226A00CCC297 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		7E1378C32BEE26C600CCC297 /* VideoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewer.swift; sourceTree = "<group>"; };
 		7E22BBD72D7F7CDC00F6D4A6 /* ReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingView.swift; sourceTree = "<group>"; };
 		7E2E072B2BEC52E30040040A /* Online Piano Lessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online Piano Lessons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +38,9 @@
 		7E2E07322BEC52E40040040A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E750A4A2BF845F70076A2D9 /* Online-Piano-Lessons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Online-Piano-Lessons-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7E85E89B2BF8DF0500D509C8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		7EA4B32C2BF5914000B55F7D /* Lesson 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 3.swift"; sourceTree = "<group>"; };
-		7EC59E8B2C13A87600837192 /* Lesson 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 4.swift"; sourceTree = "<group>"; };
 		7EF2807A2CC861B2001CDDF7 /* LessonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
-		7EF2807D2CC864A1001CDDF7 /* dataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
-		7EF2807F2CC8658A001CDDF7 /* data.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.JSON; sourceTree = "<group>"; };
+		7EF2807D2CC864A1001CDDF7 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		7EF2807F2CC8658A001CDDF7 /* Lessons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Lessons.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +61,8 @@
 			children = (
 				7E1206A02C0E60BD00BBFF27 /* ContentView.swift */,
 				7E22BBD72D7F7CDC00F6D4A6 /* ReadingView.swift */,
-				7E1378BF2BEE226A00CCC297 /* Lesson 1.swift */,
+				7E1378BF2BEE226A00CCC297 /* LessonView.swift */,
 				7EF2807A2CC861B2001CDDF7 /* LessonCard.swift */,
-				7E1378C12BEE234A00CCC297 /* Lesson 2.swift */,
-				7EA4B32C2BF5914000B55F7D /* Lesson 3.swift */,
-				7EC59E8B2C13A87600837192 /* Lesson 4.swift */,
 				7E1378C32BEE26C600CCC297 /* VideoViewer.swift */,
 			);
 			name = Views;
@@ -81,8 +72,8 @@
 		7E0180062C114314006AF640 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7EF2807F2CC8658A001CDDF7 /* data.JSON */,
-				7EF2807D2CC864A1001CDDF7 /* dataModel.swift */,
+				7EF2807F2CC8658A001CDDF7 /* Lessons.json */,
+				7EF2807D2CC864A1001CDDF7 /* Lesson.swift */,
 				7E0F83B82C1028E00093C53F /* UserViewModel.swift */,
 			);
 			path = Models;
@@ -196,7 +187,7 @@
 				7E85E89C2BF8DF0500D509C8 /* Launch Screen.storyboard in Resources */,
 				7E2E07332BEC52E40040040A /* Assets.xcassets in Resources */,
 				7E12069B2C0DF1E400BBFF27 /* Online Piano Lessons.storekit in Resources */,
-				7EF280802CC86593001CDDF7 /* data.JSON in Resources */,
+				7EF280802CC86593001CDDF7 /* Lessons.json in Resources */,
 				7E12069D2C0DF32900BBFF27 /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,13 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA4B32D2BF5914000B55F7D /* Lesson 3.swift in Sources */,
 				7E2E072F2BEC52E30040040A /* Online_Piano_LessonsApp.swift in Sources */,
-				7EC59E8C2C13A87600837192 /* Lesson 4.swift in Sources */,
 				7E22BBD82D7F7CDC00F6D4A6 /* ReadingView.swift in Sources */,
-				7EF2807E2CC864C5001CDDF7 /* dataModel.swift in Sources */,
-				7E1378C02BEE226A00CCC297 /* Lesson 1.swift in Sources */,
-				7E1378C22BEE234A00CCC297 /* Lesson 2.swift in Sources */,
+				7EF2807E2CC864C5001CDDF7 /* Lesson.swift in Sources */,
+				7E1378C02BEE226A00CCC297 /* LessonView.swift in Sources */,
 				7EF2807B2CC861B9001CDDF7 /* LessonCard.swift in Sources */,
 				7E1378C42BEE26C600CCC297 /* VideoViewer.swift in Sources */,
 				7E1206A12C0E60BD00BBFF27 /* ContentView.swift in Sources */,

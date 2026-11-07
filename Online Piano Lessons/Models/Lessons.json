@@ -1,0 +1,973 @@
+[
+  {
+    "id": 1,
+    "title": "Lesson 1",
+    "subtitle": [
+      "Key of C Basic Reading",
+      "Fundamentals"
+    ],
+    "requiresSubscription": false,
+    "sections": [
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.00: 5 Finger Scale and C Position",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%205%20Finger%20Scale%20and%20C%20Triad.mp4?alt=media&token=e05be21e-a3f8-4651-b7fd-250d043bbb25",
+            "checklistID": "lesson-video-2148162383804dbe1f99",
+            "thumbnail": "1.00_Still"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.01 Rhythm Notation",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%20Rhythm%20Lesson%20NEW.mp4?alt=media&token=b9f1212a-7c8b-48f4-89b3-08da46f63561",
+            "checklistID": "lesson-video-c9cdf062f49b65c00b9e",
+            "thumbnail": "1.02_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.01 Rhythm Notation Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Rhythm%20Notation.pdf?alt=media&token=02493fec-fe91-44e0-a0df-a65eaa3e354e"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.02 Lesson - 3 Simple Songs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Lesson.mp4?alt=media&token=f77a6cc3-a5ff-43e2-a135-de49e0675ee7",
+            "checklistID": "lesson-video-d6d8f915a8d36adcf92b",
+            "thumbnail": "1.01_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.02 3 Simple Songs - Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%203%20C%20Position%20Songs.pdf?alt=media&token=d04bd57c-def3-4d56-86bb-96eafa59c3bf"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Playalong - Mary Had a Little Lamb - SLOW",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Slow.mp4?alt=media&token=3962f3dd-fb8d-4156-9777-778c6370249d",
+            "checklistID": "lesson-video-0dabbbb56f6841c737bd"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Playalong - Mary Had a Little Lamb - Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Medium.mp4?alt=media&token=60b13c8a-a490-422c-90da-e66476f8390c",
+            "checklistID": "lesson-video-ba8520c58db4bc3a4476"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Playalong - Mary Had a Little Lamb - Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Medium.mp4?alt=media&token=60b13c8a-a490-422c-90da-e66476f8390c",
+            "checklistID": "lesson-video-ba8520c58db4bc3a4476-2"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Playalong - Jingle Bells - SLOW",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Slow.mp4?alt=media&token=bcf914cb-9be7-4f4b-8487-5b15e3982ceb",
+            "checklistID": "lesson-video-56832e104f42237442a5"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Playalong - Jingle Bells - Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Medium.mp4?alt=media&token=3ac4c48d-d17d-4e18-bfbe-e8f43b2ee061",
+            "checklistID": "lesson-video-e9f63c212d0c0d189211"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Playalong - Jingle Bells - Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Fast.mp4?alt=media&token=e0cf4562-ca4f-4b4f-8e14-67cec03f2d09",
+            "checklistID": "lesson-video-c180525049c8511df69c"
+          },
+          {
+            "kind": "video",
+            "title": "1.02 Note Test",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.00%20Note%20Test.mp4?alt=media&token=2cafa5cd-ddbf-4e3d-8e71-535b0833085a",
+            "checklistID": "lesson-video-d174e4a528728c0074e1"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.03 C Major Scale and Primary Chords",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/CMajScaleAndChordsEdited.mp4?alt=media&token=5c196198-0a29-4c22-a362-e5e555c7f65b",
+            "checklistID": "lesson-video-3e88d1ebb8dbeafe3b10",
+            "thumbnail": "1.03_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.03 C Scale and Chords Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.03%20C%20Major%20Scale%20and%20Primary%20Chords.pdf?alt=media&token=f69e9bb5-436d-4c36-91ff-51ede01cdc74"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.04 Lesson 1 Guide Notes",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.04%20-%20Guide%20Notes.mp4?alt=media&token=3a6f5757-4a47-4b5e-af50-4a253c4bf01a",
+            "checklistID": "lesson-video-18bcb044502c556a7fbe",
+            "thumbnail": "1.04_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.04 Lesson 1 Guide Notes Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.04%20Guide%20Notes.pdf?alt=media&token=7140fa39-a80e-4b1a-b8d0-d2d417661d54"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.05 Reading Lesson 1a",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Reading%20Lesson%201a.mp4?alt=media&token=13796d29-45de-4cbd-8723-7f1a48497927",
+            "checklistID": "lesson-video-cc06f8f135491f0f0714",
+            "thumbnail": "1.05_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.05 Playalong Video 1a Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Playalong%201a%20Slow.mp4?alt=media&token=8fa305b0-862f-46dc-b4da-843d6ab7bf1f",
+            "checklistID": "lesson-video-1619f5f231b41f843090"
+          },
+          {
+            "kind": "video",
+            "title": "1.05 Playalong Video 1a Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Playalong%201a%20Medium.mp4?alt=media&token=c2bfa4ee-af44-47ce-9585-3b296f74412b",
+            "checklistID": "lesson-video-0254df60ec1550c90b73"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.05 Reading Lesson 1a Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Lesson%201a%20Reading%20Lesson.pdf?alt=media&token=d84af1c9-addc-4afa-acda-18ef4c38c35c"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.06 Reading Lesson 1b",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Reading%20Lesson%201b.mp4?alt=media&token=43aa219d-4acb-4ea4-ad08-7e54bc3ddf92",
+            "checklistID": "lesson-video-4f530db234340047ac7e",
+            "thumbnail": "1.06_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.06 Playalong 1b Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Playalong%201b%20Slow.mp4?alt=media&token=89abac24-6956-4720-8559-0cddf1881062",
+            "checklistID": "lesson-video-adaa2f7b19a4397fbee5"
+          },
+          {
+            "kind": "video",
+            "title": "1.06 Playalong 1b Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Playalong%201b%20Medium.mp4?alt=media&token=d234f273-f75c-48c8-8935-a75d3c15486d",
+            "checklistID": "lesson-video-3c54d16d7cb1de3ca720"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.06 Reading Lesson 1b Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Lesson%201b%20Reading%20Lesson.pdf?alt=media&token=fae309db-7e75-4561-95f8-fdd0db3636a1"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.07 Reading Lesson 1c",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Reading%20Lesson%201c.mp4?alt=media&token=c89e78ab-9c46-4a71-863a-498ad1c0b9bc",
+            "checklistID": "lesson-video-c78a1fd1614d290dfd0f",
+            "thumbnail": "1.07_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.07 Playalong 1c Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Playalong%201c%20Slow.mp4?alt=media&token=33aa1d6f-dbc2-41e4-9c1d-68bc25244b81",
+            "checklistID": "lesson-video-f69c5486a94bfc69e7b1"
+          },
+          {
+            "kind": "video",
+            "title": "1.07 Playalong 1c Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Playalong%201c%20Medium.mp4?alt=media&token=0d80df79-dd3d-45ef-a5ed-b4cda8439934",
+            "checklistID": "lesson-video-5dfb1df0d0073191b732"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.07 Reading Lesson 1c Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Lesson%201c%20Reading%20Lesson.pdf?alt=media&token=bce89be0-5c3c-495f-bf8a-516467ec4966"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.08 Improv - G Blues and LH Pattern",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.08%20G%20Blues%20Scale%20and%20LH%20Pattern.mp4?alt=media&token=aa108b38-9672-449a-887c-2cb524216a08",
+            "checklistID": "lesson-video-fdf960f089d30160989c",
+            "thumbnail": "1.08_Still"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.09 Reading Lesson 1d - Prelude",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Lesson%201%20Prelude.mp4?alt=media&token=33dd22e3-9230-48af-a0a5-db2d2d6a4dc7",
+            "checklistID": "lesson-video-8a10ba7d40adffa767ef",
+            "thumbnail": "1.09_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.09 Playalong 1d Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Slow.mp4?alt=media&token=4e9d8972-709f-4c00-b448-20f6dec96463",
+            "checklistID": "lesson-video-80980d18c9359f02622d"
+          },
+          {
+            "kind": "video",
+            "title": "1.09 Playalong 1d Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Medium.mp4?alt=media&token=dab65cdf-cfe2-43b4-9466-4c2ac1c6b6c0",
+            "checklistID": "lesson-video-04d3914a7eb7825167cc"
+          },
+          {
+            "kind": "video",
+            "title": "1.09 Playalong 1d Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Fast.mp4?alt=media&token=d1e34886-8f58-4b0a-b5cd-f8823ed321b4",
+            "checklistID": "lesson-video-2419ba54ab2be34f6f40"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.09 Reading Lesson 1d - Prelude Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Lesson%201d%20Prelude.pdf?alt=media&token=82efb528-9c68-4b6c-b2c0-5e06fd49caa0"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.10 Reading Lesson 1e - A Simple Hymn",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Lesson%201%20Hymn.mp4?alt=media&token=37c0f6b0-fe54-480a-b1e0-1fb9ae624e92",
+            "checklistID": "lesson-video-ff90f8ffff0a3c2a77b7",
+            "thumbnail": "1.10_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.10 Playalong 1e Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Playalong%201e%20Slow.mp4?alt=media&token=1fa4edd7-3055-4453-9999-fa12896300d3",
+            "checklistID": "lesson-video-2986f5bce841f5818da0"
+          },
+          {
+            "kind": "video",
+            "title": "1.10 Playalong 1e Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Playalong%201e%20Medium.mp4?alt=media&token=760a66e6-cd4a-452e-a5c0-1dc6faf91a1e",
+            "checklistID": "lesson-video-2d141eef6d9a7a515c51"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.10 Reading Lesson 1e - A Simple Hymn Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20A%20Simple%20Hymn.pdf?alt=media&token=6b438f65-a6f2-4890-9277-16d955b09fdb"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.11 Reading Lesson 1f - Greatest Day",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Greatest%20Day.mp4?alt=media&token=efd75a8e-b714-4bbf-9709-6cb906b0fa95",
+            "checklistID": "lesson-video-519a294b4e1dc7804f84",
+            "thumbnail": "1.11_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.11 Playalong 1f Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f.%20Slow.mp4?alt=media&token=1ea5f017-593b-4172-8ac7-a1024e62f878",
+            "checklistID": "lesson-video-ec18d25c230c9f0df4be"
+          },
+          {
+            "kind": "video",
+            "title": "1.11 Playalong 1f Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f%20Medium.mp4?alt=media&token=ef9beb37-6a18-46b5-bb90-638ac870069d",
+            "checklistID": "lesson-video-efcdafa852057bd642c3"
+          },
+          {
+            "kind": "video",
+            "title": "1.11 Playalong 1f Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f%20Fast.mp4?alt=media&token=1fc20e50-c432-49fc-8ebb-25403133b823",
+            "checklistID": "lesson-video-3729ef34653443f666cf"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.11 Reading Lesson 1f - Greatest Day Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Greatest%20Day.pdf?alt=media&token=122d0b24-4a26-4484-b726-48965af23c8c"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.12 Reading Lesson 1g - Hornpipe",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Hornpipe.mp4?alt=media&token=c1e7e822-cae5-46db-a25a-92d9f33d0040",
+            "checklistID": "lesson-video-a2011d29906382f2f921",
+            "thumbnail": "1.12_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.12 Playalong 1g Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Slow.mp4?alt=media&token=94aafa0e-a848-4315-966f-dfac0028bf42",
+            "checklistID": "lesson-video-7ccfdcd81c100a5e54b6"
+          },
+          {
+            "kind": "video",
+            "title": "1.12 Playalong 1g Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Medium.mp4?alt=media&token=2e2d8fa7-8a67-40b2-8af3-d72a385f8cc2",
+            "checklistID": "lesson-video-7f22c6733125e0b99271"
+          },
+          {
+            "kind": "video",
+            "title": "1.12 Playalong 1g Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Fast.mp4?alt=media&token=abba2eff-36e4-4e7a-8fa9-ae110dd9d5be",
+            "checklistID": "lesson-video-3edc26ed5b4cc6504a43"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.12 Reading Lesson 1g - Hornpipe Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Hornpipe.pdf?alt=media&token=118028e7-665a-4191-a951-87f715be75b9"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "1.13 Reading Lesson 1h: Twinkle Twinkle",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Twinkle%20Twinkle.mp4?alt=media&token=2d8892f5-21a2-4444-9980-3c8645464ef0",
+            "checklistID": "lesson-video-4edb2e92e0d227e6a7e1",
+            "thumbnail": "1.13_Still"
+          },
+          {
+            "kind": "video",
+            "title": "1.13 Playalong 1h Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Slow.mp4?alt=media&token=9b9ebe73-f736-418b-b654-5e16619b05c4",
+            "checklistID": "lesson-video-bb36fde272f9802471ee"
+          },
+          {
+            "kind": "video",
+            "title": "1.13 Playalong 1h Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Medium.mp4?alt=media&token=2a19fb9e-9e88-4d5f-9588-5b1ecb58aaf3",
+            "checklistID": "lesson-video-4d5667809b3dda452689"
+          },
+          {
+            "kind": "video",
+            "title": "1.13 Playalong 1h Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Fast.mp4?alt=media&token=e608e0b9-0098-4c60-a77f-383e5c3b798e",
+            "checklistID": "lesson-video-569976fd2e8aaa1a0167"
+          },
+          {
+            "kind": "pdf",
+            "title": "1.13 Reading Lesson 1h - Twinkle Twinkle Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Twinkle%20Twinkle%20Little%20Star.pdf?alt=media&token=395b018e-2c8d-45bd-817d-0be58a363fe9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Lesson 2",
+    "subtitle": [
+      "Key of G and D",
+      "Ear Training and Improv"
+    ],
+    "lockedSubtitle": [
+      "36 video lessons and playalongs",
+      "Ear Training and Improv"
+    ],
+    "requiresSubscription": true,
+    "sections": [
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.00: G Scale and Primary Chords",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/GmajScaleAndChordsEdited.mp4?alt=media&token=6f711696-4ed1-4614-91f2-3016e98d51ea",
+            "checklistID": "lesson-video-04f1bf0ebd610bd0e3ca",
+            "thumbnail": "2.00_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.00: G Scale and Primary Chords Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.01%20G%20Scale%20and%20Primary%20Chords.pdf?alt=media&token=b13bd62e-76bd-4bfa-b43c-76fe5d4de900"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.01: Lesson 2 Guide Notes",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.02%20Lesson%202%20Guide%20Notes.mp4?alt=media&token=ddfa2bf0-7207-4b53-b36b-48a0e734b92f",
+            "checklistID": "lesson-video-0044f74dd5e22486843e",
+            "thumbnail": "2.01_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.01: Lesson 2 Guide Notes Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.02%20Guide%20Notes.pdf?alt=media&token=c179064e-f328-4898-ad9c-677f0d4a677a"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.02: Reading Lesson 2a - G Jam",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.02b%20Lesson%202%20G%20Jam.mp4?alt=media&token=d5bf49d7-247a-40b3-9a37-667bc90647f6",
+            "checklistID": "lesson-video-ed5284faf04e171b7c15",
+            "thumbnail": "2.02_Still"
+          },
+          {
+            "kind": "video",
+            "title": "2.02: Playalong 2a Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.02b%20Playalong%20G%20Jam%20Slow.mp4?alt=media&token=767724b8-57de-4df7-a6b4-92dbc9abd23d",
+            "checklistID": "lesson-video-8adff7601390603433bd"
+          },
+          {
+            "kind": "video",
+            "title": "2.02: Playalong 2a Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.02b%20Playalong%20G%20Jam%20Medium.mp4?alt=media&token=7922ad6a-cd0e-45cf-ad85-b1750b9b5ac6",
+            "checklistID": "lesson-video-159b0e7bb8ecd1b403a2"
+          },
+          {
+            "kind": "video",
+            "title": "2.02: Playalong 2a Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.02b%20Playalong%20G%20Jam%20Fast.mp4?alt=media&token=94d83600-6b44-49c1-8f88-f6fdf3474fbb",
+            "checklistID": "lesson-video-819dbda7458645974128"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.02: Reading Lesson 2a G Jam Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.021%20G%20Jam%20-%20reading.pdf?alt=media&token=28c8ee2a-0549-4238-9c79-2e5d2b12d6bd"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.03: G Position",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.03%20G%20position%20.mp4?alt=media&token=eea2a56c-95c5-4245-9050-f95ba945764c",
+            "checklistID": "lesson-video-a2e980ae7737d89239e8",
+            "thumbnail": "2.03_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.03: G Position Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.03%20Reading%20Lesson%202a%20G%20Position%20and%20Reaching.pdf?alt=media&token=214607ed-e5ff-4d59-a2b2-700541bb5451"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.04: Reading Lesson 2b Alouette",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.04%20Reading%20Lesson%202b%20Alouette.mp4?alt=media&token=9d1faf7b-378f-4416-94d3-c66191254079",
+            "checklistID": "lesson-video-090013e47216b2dc6f05",
+            "thumbnail": "2.04_Still"
+          },
+          {
+            "kind": "video",
+            "title": "2.04: Playalong 2b Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.04a%20Playalong%20Alouette%20Slow.mp4?alt=media&token=6f6ab61f-bd11-4c0b-a1b8-d0b256fe6623",
+            "checklistID": "lesson-video-16fa7515ce59a7e906e2"
+          },
+          {
+            "kind": "video",
+            "title": "2.04: Playalong 2b Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.04a%20Playalong%20Alouette%20Medium.mp4?alt=media&token=79f4e7f1-1235-4593-8717-900f74500951",
+            "checklistID": "lesson-video-a5f2ddacddd4166cd86b"
+          },
+          {
+            "kind": "video",
+            "title": "2.04: Playalong 2b Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.04a%20Playalong%20Alouette%20Fast.mp4?alt=media&token=9247e501-4866-4979-9dc3-3ec462c96417",
+            "checklistID": "lesson-video-9579eb92dafda63e91d4"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.04: Alouette - Melody Only Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.04%20Reading%20Lesson%202b%20Aloutte%20Melody.pdf?alt=media&token=92bdc940-15a8-4655-8cd3-c714ee5da2e2"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.04: Alouette - With Harmony Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.04%20Reading%20Lesson%202b%20Aloutte%20with%20Harmony.pdf?alt=media&token=1a7e5160-f679-469c-9956-cfd956e9d841"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.05: Ear Training",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.05%20Lesson%202%20Ear%20Training.mp4?alt=media&token=83c3b945-f220-4476-8b90-a3c1adbd24ce",
+            "checklistID": "lesson-video-815c5300864edbe9a500",
+            "thumbnail": "2.05_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.05: Ear Training Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.05%20Ear%20Training.pdf?alt=media&token=59dca2f0-a36e-4134-8586-59acad326b8b"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.06: 12 Bar Blues in G",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.6%20-%2012%20Bar%20Blues%20Form%20in%20G.mp4?alt=media&token=75c2d7b4-7fb5-48f3-ae2c-0dd7a57a3cff",
+            "checklistID": "lesson-video-4cff004a8a3af24069f9",
+            "thumbnail": "2.06_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.06: 12 Bar Blues in G Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.6%2012%20Bar%20Blues%20Form%20in%20G.pdf?alt=media&token=289ea0d6-1985-4080-a2a2-1cee0617375c"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.07: Time Signatures and Rhythm",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.07%20Rhythm%20Lesson.mp4?alt=media&token=02757e49-55b5-4d27-8347-db244cd554fd",
+            "checklistID": "lesson-video-3bdfd8997228b8b897b2",
+            "thumbnail": "2.07_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.07: Time Signatures and Rhythm Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.07%20Time%20Signatures.pdf?alt=media&token=d78f265b-4483-4ad8-bda0-1a24a21c4b84"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.08: Reading Lesson 2d Phrasing",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.08%20Lesson%202d%20Yankee%20%20Doodle.mp4?alt=media&token=57fa086f-46cb-40dd-b641-b7e217f5b892",
+            "checklistID": "lesson-video-0e45a6bbb55866fc0a54",
+            "thumbnail": "2.08_Still"
+          },
+          {
+            "kind": "video",
+            "title": "2.08: Playalong 2d Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.08%20Playalong%202d%20Slow.mp4?alt=media&token=53a849d2-e00e-4b81-b72c-37be8476c589",
+            "checklistID": "lesson-video-c54eaa23896ded894b3c"
+          },
+          {
+            "kind": "video",
+            "title": "2.08: Playalong 2d Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.08%20Playalong%202d%20Medium.mp4?alt=media&token=d4fdbf09-5058-44de-916a-d3c964129259",
+            "checklistID": "lesson-video-3693011d27b0e7c4e3de"
+          },
+          {
+            "kind": "video",
+            "title": "2.08: Playalong 2d Fast",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.08%20Playalong%202d%20Fast.mp4?alt=media&token=a08a401c-cbf0-4498-b594-35c3f7a84145",
+            "checklistID": "lesson-video-7e036bdce99e7d2462de"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.08 Lesson 2d Phrasing Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.08%20Lesson%202d%20-%20Yankee%20Doodle.pdf?alt=media&token=7a850c91-f586-4006-a24f-949e142e5b95"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.09: D Major Scale and Chords",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.09%20D%20Scale%20and%20Chords.mp4?alt=media&token=f15105bd-5fd6-4226-bbcb-9ed21aec5744",
+            "checklistID": "lesson-video-f68fed3c5405e6bb3e48",
+            "thumbnail": "2.09_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.09 D Scale and Chords Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.09%20D%20Major%20Scales%20and%20Chords.pdf?alt=media&token=97b2f3d3-dc43-4a74-8e3f-c7677fc68eaf"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.10: The V7 Chord",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.10%20Lesson%202e%20V7%20and%20Diatonic.mp4?alt=media&token=3e6ee883-eaae-43ee-8c83-7d44b0616bb4",
+            "checklistID": "lesson-video-c31198d4c53b0cccbeab",
+            "thumbnail": "2.10_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.10 The V7 Chord Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.10%20Lesson%202e%20V7%20Chord.pdf?alt=media&token=0caf3eff-6fcb-4218-8ff8-86cfe399c454"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.11: Reading Lesson 2f Brahms Lullaby",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.11%20%20Lesson%202f%20Brahms%20Lullaby.mp4?alt=media&token=3cc0afcb-8dac-4947-9a51-96a607b4cb96",
+            "checklistID": "lesson-video-04396ddd1b8d58a72d2a",
+            "thumbnail": "2.11_Still"
+          },
+          {
+            "kind": "video",
+            "title": "2.11: Playalong 2f Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.11%20Playalong%20%20Brahms%20Slow.mp4?alt=media&token=3faf726d-b6b2-4185-92fa-7b952bd2f651",
+            "checklistID": "lesson-video-df414a042beed310c47d"
+          },
+          {
+            "kind": "video",
+            "title": "2.11: Playalong 2f Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.11%20Playalong%20Medium.mp4?alt=media&token=9fd973ed-a354-4c18-9c3a-b37a820f9ec9",
+            "checklistID": "lesson-video-fe5ca295627e245ce409"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.11 Reading Lesson 2f Brahms Lullaby Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.11%20Lesson%202f%20Brahms%20Lullaby.pdf?alt=media&token=eb682aba-062e-4ec9-9b97-37d43509121a"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.12: 2 Octave Argpeggios w/ Crossover",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.12%20Arpeggios%202%20octaves%20with%20crossover.mp4?alt=media&token=bdcebcdb-1a18-475b-b25d-04d990036d29",
+            "checklistID": "lesson-video-909fcc815108e2fe7305",
+            "thumbnail": "2.12_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.12: 2 Octave Argpeggios w/ Crossover Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.12%20Arpeggios%20C%20G%20D.pdf?alt=media&token=876d3486-f8a8-45a3-abb7-3b5a8e04ac64"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.13: Hanon Exercise 1",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.13%20Hanon%20Excercise%201.mp4?alt=media&token=028bc98c-935b-4e11-9a98-3be63a87d383",
+            "checklistID": "lesson-video-fc582906b5ca5a572efe",
+            "thumbnail": "2.13_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.13: Hanon Exercise 1 Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.13%20Hanon%20Excercise%201.pdf?alt=media&token=31440043-bcbd-41af-a159-41b7fbeb196e"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.14: Austrian Hymn",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.14%20Austrian%20Hymn%20pt%201.mp4?alt=media&token=f995b687-b062-42f1-a514-6bc73fc20260",
+            "checklistID": "lesson-video-ec9f8f2b7460335e86a5",
+            "thumbnail": "2.14_Still"
+          },
+          {
+            "kind": "video",
+            "title": "2.14: Playalong 2g Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.14%20Playalong%202g%20Slow.mp4?alt=media&token=59f3af49-76be-4ae1-85c5-c2bc1408ff08",
+            "checklistID": "lesson-video-bffd7fde626a91dff856"
+          },
+          {
+            "kind": "video",
+            "title": "2.14: Playalong 2g Medium",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.14%20Playalong%202g%20Medium.mp4?alt=media&token=72b20b9e-7780-46cc-9add-d58fe6b6f876",
+            "checklistID": "lesson-video-372a4ac4b2eb4c9ad987"
+          },
+          {
+            "kind": "pdf",
+            "title": "2.14: Austrian Hymn Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.14%20Austrian%20Hymn.pdf?alt=media&token=b6fe860d-a620-4a63-9639-0a6d265a3854"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "2.15: Lesson 2 Note Test",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%202%2F2.15%20Lesson%202%20Note%20Test.mp4?alt=media&token=ba994374-3403-463a-88f9-a3a60e598530",
+            "checklistID": "lesson-video-8582c5291a7edb331c64",
+            "thumbnail": "2.15_Still"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lesson 3",
+    "subtitle": [
+      "Introducing Minor Keys",
+      "Inversions"
+    ],
+    "requiresSubscription": true,
+    "sections": [
+      {
+        "items": [
+          {
+            "kind": "comingSoon",
+            "title": "Coming Soon 3.00: Lesson 3 Guide Notes",
+            "thumbnail": "2.00_Still"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.01a: A Minor Scale and Chords",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.01%20A%20Minor%20Scales%20and%20Chords.mp4?alt=media&token=26beff48-8c9c-4822-9ce2-ce727e2730f7",
+            "checklistID": "lesson-video-a3745e83ea6a469150d4",
+            "thumbnail": "3.01a_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.01a: A Minor Scale and Chords Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.01%20A%20Minor%20Scales%20and%20Chords.pdf?alt=media&token=f48bf8ea-9a87-476c-8e7d-665a325ac945"
+          },
+          {
+            "kind": "video",
+            "title": "3.01b: C Minor Scale and Chords",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.01%20C%20Minor%20and%20Relative%20vs%20Parallel.mp4?alt=media&token=48227d8e-8dd2-40af-ad1e-3d4e773fa3fd",
+            "checklistID": "lesson-video-a836145f3a3a924c842f",
+            "thumbnail": "3.01b_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.01b: C Minor Scale and Chords Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.01%20C%20Minor%20Scales%20and%20Chords.pdf?alt=media&token=5f0de6b8-1835-4d4c-8ddb-3733f07c6062"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.02: Reading Lesson 3a",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.02%20Lesson%203a%20Beethovens%205th.mp4?alt=media&token=eabff22e-2338-4ad5-bbc4-d852d5705925",
+            "checklistID": "lesson-video-8cde05100b8e27044cc3",
+            "thumbnail": "3.02_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.02: Reading Lesson 3a Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.02%20Lesson%203a%20Beethovens%205th.pdf?alt=media&token=9daa7a13-f0be-4d14-abfd-563506429b7a"
+          },
+          {
+            "kind": "video",
+            "title": "3.02: Playalong 3a - Slow",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.02%20%20Playalong%203a%20Beethoven%20Slow.mp4?alt=media&token=960fbb32-73b6-49dd-bb50-b421cab3cea6",
+            "checklistID": "lesson-video-638b19d3249e2178c47b"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.03a: A Minor Inversions",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.03%20A%20minor%20Triad%20Inversions.mov?alt=media&token=37d14eff-b722-4110-9a96-440146c5231c",
+            "checklistID": "lesson-video-6826e99ca1356d672bfc",
+            "thumbnail": "3.03a_Still"
+          },
+          {
+            "kind": "video",
+            "title": "3.03b: C Major Inversions",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.03%20C%20Major%20Triad%20Inversions.mov?alt=media&token=4f7cef40-2329-42db-b435-455c0721d599",
+            "checklistID": "lesson-video-0a1355237c8b610a7507",
+            "thumbnail": "3.03b_Still"
+          },
+          {
+            "kind": "video",
+            "title": "3.03c: F Major Inversions",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.03%20F%20Major%20Triad%20Inversions.mov?alt=media&token=c8e5198f-50ae-4c48-be1b-923acf26640a",
+            "checklistID": "lesson-video-7d543fc1b54ea439fcf3",
+            "thumbnail": "3.03c_Still"
+          },
+          {
+            "kind": "video",
+            "title": "3.03d: G Major Inversions",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.03%20G%20Major%20Triad%20Inversions.mov?alt=media&token=dcab2ab2-6a6d-4b1e-90f4-ad2fd557acb6",
+            "checklistID": "lesson-video-e8ee65ee1ae3f4729179",
+            "thumbnail": "3.03d_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.03: Lesson 3b Inversions Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.03%20Lesson%203b%20Inversions%20for%20C%20G%20F%20Am.pdf?alt=media&token=d469acf7-d84e-4997-b783-dd8d258e0053"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.04: Lesson 3c Sustain Pedal",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.04%20Lesson%203c%20Sustain%20Pedal.mp4?alt=media&token=d13c593b-b91d-4772-980b-37a3db377dfe",
+            "checklistID": "lesson-video-db163a52419ee6410fee",
+            "thumbnail": "3.04_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.04: Lesson 3c Sustain Pedal Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.04%20Lesson%203c%20Sustain%20Pedal.pdf?alt=media&token=1d516770-cf99-492e-ad88-c3b4186089ec"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.05 A Minor Piece",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.05%20A%20minor%20piece%20with%20sustain.mp4?alt=media&token=d110de4b-2625-4e85-9cb4-25b681bf07e1",
+            "checklistID": "lesson-video-bf8b81beea3e50acf94f",
+            "thumbnail": "3.05_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.05 A Minor Piece Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.03%20C%20Major%20Scale%20and%20Primary%20Chords.pdf?alt=media&token=f69e9bb5-436d-4c36-91ff-51ede01cdc74"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.06 Choppin with Chopin",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.06%20Choppin%20with%20Chopin.mp4?alt=media&token=96df3401-9f41-4980-ae6c-9a7fa28b1ac8",
+            "checklistID": "lesson-video-f0cf3d37fec121d67336",
+            "thumbnail": "3.06_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.06 Choppin with Chopin Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.06%20Choppin%20with%20Chopin.pdf?alt=media&token=db1550eb-4ad9-48af-adc3-9375836c3e9a"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.07 Lesson 3f - Magical World",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.07%20Magical%20World.mp4?alt=media&token=3d608bac-14ab-4459-be9f-b3eacd236016",
+            "checklistID": "lesson-video-3be579f46b20431a12a2",
+            "thumbnail": "3.07_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.07 Magical World",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.07%20Lesson%203f%20-%20Magical%20World%20-%20dc%20al%20fine%20-%20Reading.pdf?alt=media&token=7bd86585-512a-46a7-9c4c-fb67f8dbdc0f"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.08 Ear Training",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.08%20Ear%20Training.mp4?alt=media&token=c67f7ff3-3e42-4ff1-9167-0c32b9a9cce1",
+            "checklistID": "lesson-video-f9b571ee38b32c30ad42",
+            "thumbnail": "3.08_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.08 Ear Training Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.08%20Ear%20Training.pdf?alt=media&token=41372596-cbd2-46a3-96af-9397f52b62be"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.09 Voice Leading - 4 Chords 3 Ways - Key of C",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.09%20Improv%20-%20Voice%20Leading%20-%20Pentatonic.mp4?alt=media&token=7af51a42-104f-4c98-8556-a88b9f71d1ff",
+            "checklistID": "lesson-video-c65962fa6867a877c581",
+            "thumbnail": "3.09_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.09 Voice Leading - Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.09%20Voice%20Leading.pdf?alt=media&token=25a50875-1f5d-4fee-8b57-9c7e521ee6cd"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.10 A Major Scale and Primary Chords",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/AmajScaleAndChordsEdited.mp4?alt=media&token=70bdf68b-7b41-4f2f-b0b6-cbcbea0202c2",
+            "checklistID": "lesson-video-abda1e1abab07b626875",
+            "thumbnail": "3.10_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.10 A Major Handout",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.09%20Voice%20Leading.pdf?alt=media&token=25a50875-1f5d-4fee-8b57-9c7e521ee6cd"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "kind": "video",
+            "title": "3.11 Waltz in A",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.11%20Waltz%20in%20A.mp4?alt=media&token=26110c35-9551-4a0a-8c5f-07d92171ecf2",
+            "checklistID": "lesson-video-d152988c5ef1b13ed571",
+            "thumbnail": "3.11_Still"
+          },
+          {
+            "kind": "pdf",
+            "title": "3.11 Waltz in A Sheet Music",
+            "url": "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%203%2F3.11%20Waltz%20in%20A.pdf?alt=media&token=e6c9c969-0772-4e39-87ec-94cde609ba99"
+          }
+        ]
+      }
+    ]
+  }
+]

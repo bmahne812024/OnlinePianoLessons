@@ -5,53 +5,73 @@
 //  Created by Brian Mahne on 10/22/24.
 //
 import SwiftUI
-struct LessonCard: View {
+
+/// One row inside a lesson: a video, a PDF handout, or a "coming soon" placeholder.
+struct LessonItemRow: View {
+    let item: LessonItem
+
     var body: some View {
-        VStack() {
-            
-            NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%205%20Finger%20Scale%20and%20C%20Triad.mp4?alt=media&token=e05be21e-a3f8-4651-b7fd-250d043bbb25")) {
-                VStack() {
-                    
-                    Text(Image(systemName: "video"))
-                        .foregroundStyle(Color.white) +
-                    Text(" 1.00: 5 Finger Scale and C Position")
-                        .font(.title)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundStyle(Color.white)
-                    
-                    Image("1.00_Still")
+        switch item.kind {
+        case .video:
+            if let url = item.url {
+                NavigationLink(destination: VideoViewer(urlString: url)) {
+                    VideoCard(title: item.title, thumbnail: item.thumbnail)
+                }
+                .lessonChecklistItem(id: item.checklistID ?? item.title, title: item.title)
+            }
+        case .pdf:
+            if let url = item.url.flatMap(URL.init(string:)) {
+                Link(destination: url) {
+                    Image("PDF")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
-                        .padding()
-                        .shadow(radius: 10, y: 10)
-                    
+                        .frame(width: 30, height: 40)
+                    Text(item.title)
+                        .font(.title2)
+                        .italic()
+                        .foregroundStyle(Color.white)
                 }
                 .padding()
-                
             }
-            Divider()
-                .overlay(.white)
+        case .comingSoon:
+            VideoCard(title: item.title, thumbnail: item.thumbnail)
+        }
+    }
+}
+
+private struct VideoCard: View {
+    let title: String
+    let thumbnail: String?
+
+    var body: some View {
+        VStack {
+            Text(Image(systemName: "video"))
+                .foregroundStyle(Color.white) +
+            Text(" " + title)
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundStyle(Color.white)
+
+            if let thumbnail {
+                Image(thumbnail)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                    .padding()
+                    .shadow(radius: 10, y: 10)
+            }
         }
         .padding()
     }
 }
 
-struct LessonCardPreview: PreviewProvider {
-    static var previews: some View {
-        LessonCard()
-        
-    }
-}
-
-
-
 // Completion is stored on this device, independently for each video activity.
 private struct LessonCompletionCheckbox: View {
     @AppStorage private var isComplete: Bool
+    private let title: String
 
-    init(id: String) {
+    init(id: String, title: String) {
         _isComplete = AppStorage(wrappedValue: false, "lessonCompletion.v1.\(id)")
+        self.title = title
     }
 
     var body: some View {
@@ -65,7 +85,7 @@ private struct LessonCompletionCheckbox: View {
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("Lesson activity completion")
+        .accessibilityLabel("\(title) completed")
         .accessibilityValue(isComplete ? "Complete" : "Not complete")
         .accessibilityHint("Double tap to toggle completion. Saved on this device.")
     }
@@ -73,17 +93,18 @@ private struct LessonCompletionCheckbox: View {
 
 private struct LessonChecklistItem: ViewModifier {
     let id: String
+    let title: String
 
     func body(content: Content) -> some View {
         HStack(alignment: .center, spacing: 0) {
-            LessonCompletionCheckbox(id: id)
+            LessonCompletionCheckbox(id: id, title: title)
             content.frame(maxWidth: .infinity)
         }
     }
 }
 
 extension View {
-    func lessonChecklistItem(id: String) -> some View {
-        modifier(LessonChecklistItem(id: id))
+    func lessonChecklistItem(id: String, title: String) -> some View {
+        modifier(LessonChecklistItem(id: id, title: title))
     }
 }

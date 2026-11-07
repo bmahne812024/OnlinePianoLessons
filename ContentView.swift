@@ -71,134 +71,19 @@ struct ContentView: View {
                     
                     
                     
-                    //Lesson 1 link
-                
-                    NavigationLink(
-                        destination: Lesson_1()) {
-                            HStack {
-                                Text("Lesson 1")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.accentColor)
-                                Spacer()
-                                VStack {
-                                    Text("Key of C Basic Reading")
-                                        .foregroundStyle(Color.white)
-                                    Text("Funndamentals")
-                                        .foregroundStyle(Color.white)
-                                }
-                                Spacer()
-                                Text(Image(systemName: "arrow.forward"))
-                                    .foregroundStyle(Color.white)
-                                
+                    ForEach(LessonCatalog.lessons) { lesson in
+                        if lesson.requiresSubscription && !userViewModel.isSubscriptionActive {
+                            Button { showPaywall = true } label: {
+                                LessonRow(lesson: lesson, isLocked: true)
                             }
-                            .padding()
-                            .border(Color.white)
-                            .padding(.horizontal, 32.0)
-                        }	
-                
+                        } else {
+                            NavigationLink(destination: LessonView(lesson: lesson)) {
+                                LessonRow(lesson: lesson, isLocked: false)
+                            }
+                        }
+                    }
 
-                    
-                    
-                    //Lesson 2 Link
-                    if userViewModel.isSubscriptionActive {
-                        NavigationLink(destination: Lesson_2()) {
-                            HStack {
-                                Text("Lesson 2")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.accentColor)
-                                Spacer()
-                                VStack {
-                                    Text("Key of G and D")
-                                        .foregroundStyle(Color.white)
-                                    Text("Ear Training and Improv")
-                                        .foregroundStyle(Color.white)
-                                }
-                                Spacer()
-                                Text(Image(systemName: "arrow.forward"))
-                                    .foregroundStyle(Color.white)
-                            }
-                            .padding()
-                            .border(Color.white)
-                            .padding(.horizontal, 32.0)
-                        }
-                    }
-                    else {
-                        Button { showPaywall = true } label: {
-                                HStack {
-                                    Text("Lesson 2")
-                                        .font(.title)
-                                        .fontWeight(.bold)
-                                        .foregroundStyle(Color.accentColor)
-                                    Spacer()
-                                    VStack {
-                                        Text("36 video lessons and playalongs")
-                                            .foregroundStyle(Color.white)
-                                        Text("Ear Training and Improv")
-                                            .foregroundStyle(Color.white)
-                                    }
-                                    Spacer()
-                                    Text(Image(systemName: "arrow.forward"))
-                                        .foregroundStyle(Color.white)
-                                }
-                                .padding()
-                                .border(Color.white)
-                                .padding(.horizontal, 32.0)
-                            }
-                    }
-                    
-                    
-                    //Lesson 3 Link
-                    if userViewModel.isSubscriptionActive {
-                        NavigationLink(destination: Lesson_3()) {
-                            HStack {
-                                Text("Lesson 3")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.accentColor)
-                                Spacer()
-                                VStack {
-                                    Text("Introducing Minor Keys")
-                                        .foregroundStyle(Color.white)
-                                    Text("Inversions")
-                                        .foregroundStyle(Color.white)
-                                }
-                                Spacer()
-                                Text(Image(systemName: "arrow.forward"))
-                                    .foregroundStyle(Color.white)
-                            }
-                            .padding()
-                            .border(Color.white)
-                            .padding(.horizontal, 32.0)
-                        }
-                    }
-                    else {
-                        Button { showPaywall = true } label: {
-                                HStack {
-                                    Text("Lesson 3")
-                                        .font(.title)
-                                        .fontWeight(.bold)
-                                        .foregroundStyle(Color.accentColor)
-                                    Spacer()
-                                    VStack {
-                                        Text("Introducing Minor Keys")
-                                            .foregroundStyle(Color.white)
-                                        Text("Inversions")
-                                            .foregroundStyle(Color.white)
-                                    }
-                                    Spacer()
-                                    Text(Image(systemName: "arrow.forward"))
-                                        .foregroundStyle(Color.white)
-                                }
-                                .padding()
-                                .border(Color.white)
-                                .padding(.horizontal, 32.0)
-                            }
-                        
-                    }
-                    
-                    
+
                     //Email the teacher
                     if userViewModel.isSubscriptionActive {
                         HStack {
@@ -262,6 +147,34 @@ private extension View {
         } message: {
             Text(userViewModel.purchaseError ?? "Please try again.")
         }
+    }
+}
+
+/// A lesson's button on the home screen.
+private struct LessonRow: View {
+    let lesson: Lesson
+    let isLocked: Bool
+
+    var body: some View {
+        HStack {
+            Text(lesson.title)
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundStyle(Color.accentColor)
+            Spacer()
+            VStack {
+                ForEach(isLocked ? (lesson.lockedSubtitle ?? lesson.subtitle) : lesson.subtitle, id: \.self) { line in
+                    Text(line)
+                        .foregroundStyle(Color.white)
+                }
+            }
+            Spacer()
+            Text(Image(systemName: "arrow.forward"))
+                .foregroundStyle(Color.white)
+        }
+        .padding()
+        .border(Color.white)
+        .padding(.horizontal, 32.0)
     }
 }
 
