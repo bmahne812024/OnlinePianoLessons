@@ -1,25 +1,31 @@
-//
-//  someClass.swift
-//  Online Piano Lessons
-//
-//  Created by Brian Mahne on 6/5/24.
-//
-
 import Foundation
 import SwiftUI
 import RevenueCat
-class UserViewModel: ObservableObject {
-    @Published var isSubscriptionActive = false
+
+@MainActor
+final class UserViewModel: NSObject, ObservableObject, PurchasesDelegate {
+    @Published private(set) var isSubscriptionActive = false
+    @Published var purchaseError: String?
     @Published var toggle = false
-    
-    init() {
-        Purchases.shared.getCustomerInfo { (customerInfo, error) in
-           
-            // access latest customerInfo
-            
-            self.isSubscriptionActive = customerInfo?.entitlements.all["Full Access"]?.isActive == true
-            
+
+    override init() {
+        super.init()
+        Purchases.shared.delegate = self
+        refreshSubscriptionStatus()
+    }
+
+    func apply(_ customerInfo: CustomerInfo) {
+        isSubscriptionActive = customerInfo.entitlements.active["Full Access"] != nil
+    }
+
+    func refreshSubscriptionStatus() {
+        Task {
+            do { apply(try await Purchases.shared.customerInfo()) }
+            catch { purchaseError = error.localizedDescription }
         }
     }
 
+    nonisolated func purchases(_ purchases: Purchases, receivedUpdated customerInfo: CustomerInfo) {
+        Task { @MainActor in self.apply(customerInfo) }
+    }
 }

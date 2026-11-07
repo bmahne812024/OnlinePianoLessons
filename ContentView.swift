@@ -12,8 +12,16 @@ import RevenueCatUI
 struct ContentView: View {
     @EnvironmentObject var userViewModel: UserViewModel
     @Binding var videoUrlAsString: String
-    let customerInfo = Purchases.shared.cachedCustomerInfo
+
     
+    private var subscriptionPaywall: some View {
+        PaywallView()
+            .onPurchaseCompleted { info in userViewModel.apply(info) }
+            .onRestoreCompleted { info in userViewModel.apply(info) }
+            .onPurchaseFailure { error in userViewModel.purchaseError = error.localizedDescription }
+            .onRestoreFailure { error in userViewModel.purchaseError = error.localizedDescription }
+    }
+
     var body: some View {
         NavigationStack {
             VStack() {
@@ -66,57 +74,32 @@ struct ContentView: View {
                     
                     
                     //Lesson 1 link
-                    if userViewModel.isSubscriptionActive {
-                        NavigationLink(
-                            destination: Lesson_1(videoUrlAsString: $videoUrlAsString)) {
-                                HStack {
-                                    Text("Lesson 1")
-                                        .font(.title)
-                                        .fontWeight(.bold)
-                                        .foregroundStyle(Color.accentColor)
-                                    Spacer()
-                                    VStack {
-                                        Text("Key of C Basic Reading")
-                                            .foregroundStyle(Color.white)
-                                        Text("Funndamentals")
-                                            .foregroundStyle(Color.white)
-                                    }
-                                    Spacer()
-                                    Text(Image(systemName: "arrow.forward"))
+                
+                    NavigationLink(
+                        destination: Lesson_1(videoUrlAsString: $videoUrlAsString)) {
+                            HStack {
+                                Text("Lesson 1")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundStyle(Color.accentColor)
+                                Spacer()
+                                VStack {
+                                    Text("Key of C Basic Reading")
                                         .foregroundStyle(Color.white)
-                                    
+                                    Text("Funndamentals")
+                                        .foregroundStyle(Color.white)
                                 }
-                                .padding()
-                                .border(Color.white)
-                                .padding(.horizontal, 32.0)
+                                Spacer()
+                                Text(Image(systemName: "arrow.forward"))
+                                    .foregroundStyle(Color.white)
+                                
                             }
-                    }
-                    else {
-                        NavigationLink(
-                            destination: PaywallView().onPurchaseCompleted { CustomerInfo in
-                                userViewModel.isSubscriptionActive = true}) {
-                                    HStack {
-                                        Text("Lesson 1")
-                                            .font(.title)
-                                            .fontWeight(.bold)
-                                            .foregroundStyle(Color.accentColor)
-                                        Spacer()
-                                        VStack {
-                                            Text("14 video lessons with sheet music and handouts")
-                                                .foregroundStyle(Color.white)
-                                            Text("+26 video playalongs")
-                                                .foregroundStyle(Color.white)
-                                        }
-                                        Spacer()
-                                        Text(Image(systemName: "arrow.forward"))
-                                            .foregroundStyle(Color.white)
-                                        
-                                    }
-                                    .padding()
-                                    .border(Color.white)
-                                    .padding(.horizontal, 32.0)
-                                }
-                    }
+                            .padding()
+                            .border(Color.white)
+                            .padding(.horizontal, 32.0)
+                        }	
+                
+
                     
                     
                     //Lesson 2 Link
@@ -144,8 +127,7 @@ struct ContentView: View {
                         }
                     }
                     else {
-                        NavigationLink(destination: PaywallView().onPurchaseCompleted { CustomerInfo in
-                            userViewModel.isSubscriptionActive = true}) {
+                        NavigationLink(destination: subscriptionPaywall) {
                                 HStack {
                                     Text("Lesson 2")
                                         .font(.title)
@@ -194,8 +176,7 @@ struct ContentView: View {
                         }
                     }
                     else {
-                        NavigationLink(destination: PaywallView().onPurchaseCompleted { CustomerInfo in
-                            userViewModel.isSubscriptionActive = true}) {
+                        NavigationLink(destination: subscriptionPaywall) {
                                 HStack {
                                     Text("Lesson 3")
                                         .font(.title)
@@ -217,56 +198,6 @@ struct ContentView: View {
                                 .padding(.horizontal, 32.0)
                             }
                         
-                    }
-                    
-                    
-                    //Lesson 4 Link
-                    if userViewModel.isSubscriptionActive {
-                        NavigationLink(destination: Lesson_4(videoUrlAsString: $videoUrlAsString)) {
-                            HStack {
-                                Text("Lesson 4")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundStyle(Color.accentColor)
-                                Spacer()
-                                VStack {
-                                    Text("Key of F")
-                                        .foregroundStyle(Color.white)
-                                    Text("Voice Leading, Sixteenths, Dotted Eighths")
-                                        .foregroundStyle(Color.white)
-                                }
-                                Spacer()
-                                Text(Image(systemName: "arrow.forward"))
-                                    .foregroundStyle(Color.white)
-                            }
-                            .padding()
-                            .border(Color.white)
-                            .padding(.horizontal, 32.0)
-                        }
-                    }
-                    else {
-                        NavigationLink(destination: PaywallView().onPurchaseCompleted { CustomerInfo in
-                            userViewModel.isSubscriptionActive = true}) {
-                                HStack {
-                                    Text("Lesson 4")
-                                        .font(.title)
-                                        .fontWeight(.bold)
-                                        .foregroundStyle(Color.accentColor)
-                                    Spacer()
-                                    VStack {
-                                        Text("Key of F")
-                                            .foregroundStyle(Color.white)
-                                        Text("Voice Leading, Sixteenths, Dotted Eighths")
-                                            .foregroundStyle(Color.white)
-                                    }
-                                    Spacer()
-                                    Text(Image(systemName: "arrow.forward"))
-                                        .foregroundStyle(Color.white)
-                                }
-                                .padding()
-                                .border(Color.white)
-                                .padding(.horizontal, 32.0)
-                            }
                     }
                     
                     
@@ -315,11 +246,22 @@ struct ContentView: View {
         
         
         }
+        .alert("Purchase or restore issue", isPresented: Binding(
+            get: { userViewModel.purchaseError != nil },
+            set: { if !$0 { userViewModel.purchaseError = nil } }
+        )) {
+            Button("OK", role: .cancel) { userViewModel.purchaseError = nil }
+        } message: {
+            Text(userViewModel.purchaseError ?? "Please try again.")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-static let userViewModel = UserViewModel()
+static let userViewModel: UserViewModel = {
+        if !Purchases.isConfigured { Purchases.configure(withAPIKey: "appl_eyCULxOtwyCZyrqjPkLRlcopstP") }
+        return UserViewModel()
+    }()
     
     
     static var previews: some View {

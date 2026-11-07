@@ -51,3 +51,46 @@ struct LessonCardPreview: PreviewProvider {
     }
 }
 
+
+
+// Completion is stored on this device, independently for each video activity.
+private struct LessonCompletionCheckbox: View {
+    @AppStorage private var isComplete: Bool
+
+    init(id: String) {
+        _isComplete = AppStorage(wrappedValue: false, "lessonCompletion.v1.\(id)")
+    }
+
+    var body: some View {
+        Button {
+            isComplete.toggle()
+        } label: {
+            Image(systemName: isComplete ? "checkmark.square.fill" : "square")
+                .font(.system(size: 21))
+                .foregroundStyle(isComplete ? Color.accentColor : Color.white)
+                .frame(width: 44, height: 44)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Lesson activity completion")
+        .accessibilityValue(isComplete ? "Complete" : "Not complete")
+        .accessibilityHint("Double tap to toggle completion. Saved on this device.")
+    }
+}
+
+private struct LessonChecklistItem: ViewModifier {
+    let id: String
+
+    func body(content: Content) -> some View {
+        HStack(alignment: .center, spacing: 0) {
+            LessonCompletionCheckbox(id: id)
+            content.frame(maxWidth: .infinity)
+        }
+    }
+}
+
+extension View {
+    func lessonChecklistItem(id: String) -> some View {
+        modifier(LessonChecklistItem(id: id))
+    }
+}

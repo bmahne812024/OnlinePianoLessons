@@ -10,7 +10,8 @@ import RevenueCat
 @main
 
 struct Online_Piano_LessonsApp: App {
-    @StateObject var userViewModel = UserViewModel()
+    @StateObject private var userViewModel: UserViewModel
+    @Environment(\.scenePhase) private var scenePhase
     @State private var videoUrlAsString = ""
    
     
@@ -20,14 +21,18 @@ struct Online_Piano_LessonsApp: App {
             ContentView(videoUrlAsString: $videoUrlAsString)
                 
                 .environmentObject(userViewModel)
+                .onChange(of: scenePhase) { _, phase in
+                    if phase == .active { userViewModel.refreshSubscriptionStatus() }
+                }
                 
             
         }
     }
     init() {
+        #if DEBUG
         Purchases.logLevel = .debug
+        #endif
         Purchases.configure(withAPIKey: "appl_eyCULxOtwyCZyrqjPkLRlcopstP")
-
-        
+        _userViewModel = StateObject(wrappedValue: UserViewModel())
     }
 }
