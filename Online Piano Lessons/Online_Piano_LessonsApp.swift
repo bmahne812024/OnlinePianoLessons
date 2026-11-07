@@ -12,13 +12,12 @@ import RevenueCat
 struct Online_Piano_LessonsApp: App {
     @StateObject private var userViewModel: UserViewModel
     @Environment(\.scenePhase) private var scenePhase
-    @State private var videoUrlAsString = ""
    
     
     var body: some Scene {
         WindowGroup {
             
-            ContentView(videoUrlAsString: $videoUrlAsString)
+            ContentView()
                 
                 .environmentObject(userViewModel)
                 .onChange(of: scenePhase) { _, phase in

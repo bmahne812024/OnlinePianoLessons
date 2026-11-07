@@ -6,11 +6,10 @@
 //
 import SwiftUI
 struct LessonCard: View {
-    @Binding var videoUrlAsString: String
     var body: some View {
         VStack() {
             
-            NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+            NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%205%20Finger%20Scale%20and%20C%20Triad.mp4?alt=media&token=e05be21e-a3f8-4651-b7fd-250d043bbb25")) {
                 VStack() {
                     
                     Text(Image(systemName: "video"))
@@ -31,12 +30,6 @@ struct LessonCard: View {
                 .padding()
                 
             }
-            //simultaneously sets the url for viewer when link is clicked
-            .simultaneousGesture(TapGesture().onEnded {
-                
-                videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%205%20Finger%20Scale%20and%20C%20Triad.mp4?alt=media&token=e05be21e-a3f8-4651-b7fd-250d043bbb25"
-            
-            })
             Divider()
                 .overlay(.white)
         }
@@ -46,7 +39,7 @@ struct LessonCard: View {
 
 struct LessonCardPreview: PreviewProvider {
     static var previews: some View {
-        LessonCard(videoUrlAsString: .constant( "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%20Rhythm%20Lesson%20NEW.mp4?alt=media&token=b9f1212a-7c8b-48f4-89b3-08da46f63561"))
+        LessonCard()
         
     }
 }

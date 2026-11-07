@@ -11,13 +11,14 @@ import RevenueCatUI
 
 struct ContentView: View {
     @EnvironmentObject var userViewModel: UserViewModel
-    @Binding var videoUrlAsString: String
+    @State private var showPaywall = false
+
 
     
     private var subscriptionPaywall: some View {
         PaywallView()
-            .onPurchaseCompleted { info in userViewModel.apply(info) }
-            .onRestoreCompleted { info in userViewModel.apply(info) }
+            .onPurchaseCompleted { info in userViewModel.apply(info); showPaywall = false }
+            .onRestoreCompleted { info in userViewModel.apply(info); showPaywall = false }
             .onPurchaseFailure { error in userViewModel.purchaseError = error.localizedDescription }
             .onRestoreFailure { error in userViewModel.purchaseError = error.localizedDescription }
     }
@@ -49,7 +50,7 @@ struct ContentView: View {
                 
                 ScrollView {
                     
-                    NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                    NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/IntroVideo.mp4?alt=media&token=3006ee92-cf37-433c-b572-e50d6c9cd4bb")) {
                         ZStack() {
                             Image("introstill")
                                 .resizable()
@@ -65,9 +66,6 @@ struct ContentView: View {
                             
                         }
                     }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/IntroVideo.mp4?alt=media&token=3006ee92-cf37-433c-b572-e50d6c9cd4bb"
-                    })
                     
                     
                     
@@ -76,7 +74,7 @@ struct ContentView: View {
                     //Lesson 1 link
                 
                     NavigationLink(
-                        destination: Lesson_1(videoUrlAsString: $videoUrlAsString)) {
+                        destination: Lesson_1()) {
                             HStack {
                                 Text("Lesson 1")
                                     .font(.title)
@@ -104,7 +102,7 @@ struct ContentView: View {
                     
                     //Lesson 2 Link
                     if userViewModel.isSubscriptionActive {
-                        NavigationLink(destination: Lesson_2(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: Lesson_2()) {
                             HStack {
                                 Text("Lesson 2")
                                     .font(.title)
@@ -127,7 +125,7 @@ struct ContentView: View {
                         }
                     }
                     else {
-                        NavigationLink(destination: subscriptionPaywall) {
+                        Button { showPaywall = true } label: {
                                 HStack {
                                     Text("Lesson 2")
                                         .font(.title)
@@ -153,7 +151,7 @@ struct ContentView: View {
                     
                     //Lesson 3 Link
                     if userViewModel.isSubscriptionActive {
-                        NavigationLink(destination: Lesson_3(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: Lesson_3()) {
                             HStack {
                                 Text("Lesson 3")
                                     .font(.title)
@@ -176,7 +174,7 @@ struct ContentView: View {
                         }
                     }
                     else {
-                        NavigationLink(destination: subscriptionPaywall) {
+                        Button { showPaywall = true } label: {
                                 HStack {
                                     Text("Lesson 3")
                                         .font(.title)
@@ -246,7 +244,17 @@ struct ContentView: View {
         
         
         }
-        .alert("Purchase or restore issue", isPresented: Binding(
+        .sheet(isPresented: $showPaywall) {
+            // The alert is attached here too: the root view can't present it while the sheet is up.
+            subscriptionPaywall.purchaseErrorAlert(userViewModel)
+        }
+        .purchaseErrorAlert(userViewModel)
+    }
+}
+
+private extension View {
+    func purchaseErrorAlert(_ userViewModel: UserViewModel) -> some View {
+        alert("Purchase or restore issue", isPresented: Binding(
             get: { userViewModel.purchaseError != nil },
             set: { if !$0 { userViewModel.purchaseError = nil } }
         )) {
@@ -265,7 +273,7 @@ static let userViewModel: UserViewModel = {
     
     
     static var previews: some View {
-        ContentView(videoUrlAsString: .constant("firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/CMajScaleAndChordsEdited.mp4?alt=media&token=5c196198-0a29-4c22-a362-e5e555c7f65b"))
+        ContentView()
             .environmentObject(userViewModel)
     }
    

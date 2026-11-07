@@ -21,7 +21,11 @@ final class UserViewModel: NSObject, ObservableObject, PurchasesDelegate {
     func refreshSubscriptionStatus() {
         Task {
             do { apply(try await Purchases.shared.customerInfo()) }
-            catch { purchaseError = error.localizedDescription }
+            catch {
+                // Background refreshes fail whenever the device is offline. Keep the last known
+                // status instead of alerting; the alert is reserved for purchase/restore failures.
+                print("Subscription status refresh failed: \(error.localizedDescription)")
+            }
         }
     }
 

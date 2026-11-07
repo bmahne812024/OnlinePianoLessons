@@ -7,16 +7,10 @@
 
 import SwiftUI
 struct Lesson_1: View {
-    /*
-     declare videoUrlAsString and bind to same variable as state in
-     maim app file
-     */
-    @Binding var videoUrlAsString: String
     //begin body of lesson 1
     
     var body: some View {
         
-        NavigationStack {
             
             ScrollView {
                 //first video link calling video view
@@ -26,7 +20,7 @@ struct Lesson_1: View {
                     
                     VStack() {
                         		
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%205%20Finger%20Scale%20and%20C%20Triad.mp4?alt=media&token=e05be21e-a3f8-4651-b7fd-250d043bbb25")) {
                             VStack {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -46,12 +40,6 @@ struct Lesson_1: View {
                             .padding()
                             
                         }
-                        //simultaneously sets the url for viewer when link is clicked
-                        .simultaneousGesture(TapGesture().onEnded {
-                            
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%205%20Finger%20Scale%20and%20C%20Triad.mp4?alt=media&token=e05be21e-a3f8-4651-b7fd-250d043bbb25"
-                        
-                        })
                         .lessonChecklistItem(id: "lesson-video-2148162383804dbe1f99")
                         Divider()
                             .overlay(.white)
@@ -67,7 +55,7 @@ struct Lesson_1: View {
                     VStack() {
                         //1.01 links
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%20Rhythm%20Lesson%20NEW.mp4?alt=media&token=b9f1212a-7c8b-48f4-89b3-08da46f63561")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -84,9 +72,6 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.01%20Rhythm%20Lesson%20NEW.mp4?alt=media&token=b9f1212a-7c8b-48f4-89b3-08da46f63561"
-                        })
                         .lessonChecklistItem(id: "lesson-video-c9cdf062f49b65c00b9e")
                         
                         
@@ -113,7 +98,7 @@ struct Lesson_1: View {
                     VStack() {
                         //1.02 links
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Lesson.mp4?alt=media&token=f77a6cc3-a5ff-43e2-a135-de49e0675ee7")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -130,9 +115,6 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Lesson.mp4?alt=media&token=f77a6cc3-a5ff-43e2-a135-de49e0675ee7"
-                        })
                         .lessonChecklistItem(id: "lesson-video-d6d8f915a8d36adcf92b")
                         
                         
@@ -147,7 +129,7 @@ struct Lesson_1: View {
                         })
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Slow.mp4?alt=media&token=3962f3dd-fb8d-4156-9777-778c6370249d")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -159,14 +141,11 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Slow.mp4?alt=media&token=3962f3dd-fb8d-4156-9777-778c6370249d"
-                        })
                         .lessonChecklistItem(id: "lesson-video-0dabbbb56f6841c737bd")
                         
                        
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Medium.mp4?alt=media&token=60b13c8a-a490-422c-90da-e66476f8390c")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -178,12 +157,9 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Medium.mp4?alt=media&token=60b13c8a-a490-422c-90da-e66476f8390c"
-                        })
                         .lessonChecklistItem(id: "lesson-video-ba8520c58db4bc3a4476")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Medium.mp4?alt=media&token=60b13c8a-a490-422c-90da-e66476f8390c")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -195,12 +171,9 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Mary%20Had%20Medium.mp4?alt=media&token=60b13c8a-a490-422c-90da-e66476f8390c"
-                        })
                         .lessonChecklistItem(id: "lesson-video-ba8520c58db4bc3a4476-2")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Slow.mp4?alt=media&token=bcf914cb-9be7-4f4b-8487-5b15e3982ceb")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -212,12 +185,9 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Slow.mp4?alt=media&token=bcf914cb-9be7-4f4b-8487-5b15e3982ceb"
-                        })
                         .lessonChecklistItem(id: "lesson-video-56832e104f42237442a5")
                      
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Medium.mp4?alt=media&token=3ac4c48d-d17d-4e18-bfbe-e8f43b2ee061")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -229,12 +199,9 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Medium.mp4?alt=media&token=3ac4c48d-d17d-4e18-bfbe-e8f43b2ee061"
-                        })
                         .lessonChecklistItem(id: "lesson-video-e9f63c212d0c0d189211")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Fast.mp4?alt=media&token=e0cf4562-ca4f-4b4f-8e14-67cec03f2d09")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -246,13 +213,10 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.02%20Playalong%20Jingle%20Bells%20Fast.mp4?alt=media&token=e0cf4562-ca4f-4b4f-8e14-67cec03f2d09"
-                        })
                         .lessonChecklistItem(id: "lesson-video-c180525049c8511df69c")
                      
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.00%20Note%20Test.mp4?alt=media&token=2cafa5cd-ddbf-4e3d-8e71-535b0833085a")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -264,9 +228,6 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.00%20Note%20Test.mp4?alt=media&token=2cafa5cd-ddbf-4e3d-8e71-535b0833085a"
-                        })
                         .lessonChecklistItem(id: "lesson-video-d174e4a528728c0074e1")
                         
                         
@@ -279,7 +240,7 @@ struct Lesson_1: View {
                     //1.03 links
                     
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/CMajScaleAndChordsEdited.mp4?alt=media&token=5c196198-0a29-4c22-a362-e5e555c7f65b")) {
                             VStack() {
                                 Text(Image(systemName: "video")) 
                                     .foregroundStyle(Color.white) +
@@ -296,9 +257,6 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/CMajScaleAndChordsEdited.mp4?alt=media&token=5c196198-0a29-4c22-a362-e5e555c7f65b"
-                        })
                         .lessonChecklistItem(id: "lesson-video-3e88d1ebb8dbeafe3b10")
                         
                         
@@ -325,7 +283,7 @@ struct Lesson_1: View {
                     
                     //1.04 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.04%20-%20Guide%20Notes.mp4?alt=media&token=3a6f5757-4a47-4b5e-af50-4a253c4bf01a")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -342,9 +300,6 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.04%20-%20Guide%20Notes.mp4?alt=media&token=3a6f5757-4a47-4b5e-af50-4a253c4bf01a"
-                        })
                         .lessonChecklistItem(id: "lesson-video-18bcb044502c556a7fbe")
                         
                         
@@ -371,7 +326,7 @@ struct Lesson_1: View {
                     
                     //1.05 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Reading%20Lesson%201a.mp4?alt=media&token=13796d29-45de-4cbd-8723-7f1a48497927")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -388,12 +343,9 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Reading%20Lesson%201a.mp4?alt=media&token=13796d29-45de-4cbd-8723-7f1a48497927"
-                        })
                         .lessonChecklistItem(id: "lesson-video-cc06f8f135491f0f0714")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Playalong%201a%20Slow.mp4?alt=media&token=8fa305b0-862f-46dc-b4da-843d6ab7bf1f")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -404,12 +356,9 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Playalong%201a%20Slow.mp4?alt=media&token=8fa305b0-862f-46dc-b4da-843d6ab7bf1f"
-                        })
                         .lessonChecklistItem(id: "lesson-video-1619f5f231b41f843090")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Playalong%201a%20Medium.mp4?alt=media&token=c2bfa4ee-af44-47ce-9585-3b296f74412b")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -420,9 +369,6 @@ struct Lesson_1: View {
                             }
                             .padding()
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.05%20Playalong%201a%20Medium.mp4?alt=media&token=c2bfa4ee-af44-47ce-9585-3b296f74412b"
-                        })
                         .lessonChecklistItem(id: "lesson-video-0254df60ec1550c90b73")
                         
                         
@@ -453,7 +399,7 @@ struct Lesson_1: View {
                     
                     //1.06 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Reading%20Lesson%201b.mp4?alt=media&token=43aa219d-4acb-4ea4-ad08-7e54bc3ddf92")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -469,12 +415,9 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Reading%20Lesson%201b.mp4?alt=media&token=43aa219d-4acb-4ea4-ad08-7e54bc3ddf92"
-                        })
                         .lessonChecklistItem(id: "lesson-video-4f530db234340047ac7e")
                         .padding()
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Playalong%201b%20Slow.mp4?alt=media&token=89abac24-6956-4720-8559-0cddf1881062")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -485,14 +428,11 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Playalong%201b%20Slow.mp4?alt=media&token=89abac24-6956-4720-8559-0cddf1881062"
-                        })
                         .lessonChecklistItem(id: "lesson-video-adaa2f7b19a4397fbee5")
                         
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Playalong%201b%20Medium.mp4?alt=media&token=d234f273-f75c-48c8-8935-a75d3c15486d")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -503,9 +443,6 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.06%20Playalong%201b%20Medium.mp4?alt=media&token=d234f273-f75c-48c8-8935-a75d3c15486d"
-                        })
                         .lessonChecklistItem(id: "lesson-video-3c54d16d7cb1de3ca720")
                         .padding()
                         
@@ -529,7 +466,7 @@ struct Lesson_1: View {
                     
                     //1.07 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Reading%20Lesson%201c.mp4?alt=media&token=c89e78ab-9c46-4a71-863a-498ad1c0b9bc")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -545,12 +482,9 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Reading%20Lesson%201c.mp4?alt=media&token=c89e78ab-9c46-4a71-863a-498ad1c0b9bc"
-                        })
                         .lessonChecklistItem(id: "lesson-video-c78a1fd1614d290dfd0f")
                         .padding()
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Playalong%201c%20Slow.mp4?alt=media&token=33aa1d6f-dbc2-41e4-9c1d-68bc25244b81")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -560,13 +494,10 @@ struct Lesson_1: View {
                                     .foregroundStyle(Color.white)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Playalong%201c%20Slow.mp4?alt=media&token=33aa1d6f-dbc2-41e4-9c1d-68bc25244b81"
-                        })
                         .lessonChecklistItem(id: "lesson-video-f69c5486a94bfc69e7b1")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Playalong%201c%20Medium.mp4?alt=media&token=0d80df79-dd3d-45ef-a5ed-b4cda8439934")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -576,9 +507,6 @@ struct Lesson_1: View {
                                     .foregroundStyle(Color.white)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.07%20Playalong%201c%20Medium.mp4?alt=media&token=0d80df79-dd3d-45ef-a5ed-b4cda8439934"
-                        })
                         .lessonChecklistItem(id: "lesson-video-5dfb1df0d0073191b732")
                         .padding()
                         
@@ -602,7 +530,7 @@ struct Lesson_1: View {
                     //1.08 links
                     
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.08%20G%20Blues%20Scale%20and%20LH%20Pattern.mp4?alt=media&token=aa108b38-9672-449a-887c-2cb524216a08")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -618,9 +546,6 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.08%20G%20Blues%20Scale%20and%20LH%20Pattern.mp4?alt=media&token=aa108b38-9672-449a-887c-2cb524216a08"
-                        })
                         .lessonChecklistItem(id: "lesson-video-fdf960f089d30160989c")
                         
                         
@@ -635,7 +560,7 @@ struct Lesson_1: View {
                     
                     //1.09 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Lesson%201%20Prelude.mp4?alt=media&token=33dd22e3-9230-48af-a0a5-db2d2d6a4dc7")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -651,12 +576,9 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Lesson%201%20Prelude.mp4?alt=media&token=33dd22e3-9230-48af-a0a5-db2d2d6a4dc7"
-                        })
                         .lessonChecklistItem(id: "lesson-video-8a10ba7d40adffa767ef")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Slow.mp4?alt=media&token=4e9d8972-709f-4c00-b448-20f6dec96463")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -667,13 +589,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Slow.mp4?alt=media&token=4e9d8972-709f-4c00-b448-20f6dec96463"
-                        })
                         .lessonChecklistItem(id: "lesson-video-80980d18c9359f02622d")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Medium.mp4?alt=media&token=dab65cdf-cfe2-43b4-9466-4c2ac1c6b6c0")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -684,13 +603,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Medium.mp4?alt=media&token=dab65cdf-cfe2-43b4-9466-4c2ac1c6b6c0"
-                        })
                         .lessonChecklistItem(id: "lesson-video-04d3914a7eb7825167cc")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Fast.mp4?alt=media&token=d1e34886-8f58-4b0a-b5cd-f8823ed321b4")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -701,9 +617,6 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.09%20Playalong%201d%20Fast.mp4?alt=media&token=d1e34886-8f58-4b0a-b5cd-f8823ed321b4"
-                        })
                         .lessonChecklistItem(id: "lesson-video-2419ba54ab2be34f6f40")
                         .padding()
                         
@@ -726,7 +639,7 @@ struct Lesson_1: View {
                     
                     //1.10 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Lesson%201%20Hymn.mp4?alt=media&token=37c0f6b0-fe54-480a-b1e0-1fb9ae624e92")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -742,12 +655,9 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Lesson%201%20Hymn.mp4?alt=media&token=37c0f6b0-fe54-480a-b1e0-1fb9ae624e92"
-                        })
                         .lessonChecklistItem(id: "lesson-video-ff90f8ffff0a3c2a77b7")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Playalong%201e%20Slow.mp4?alt=media&token=1fa4edd7-3055-4453-9999-fa12896300d3")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -758,12 +668,9 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Playalong%201e%20Slow.mp4?alt=media&token=1fa4edd7-3055-4453-9999-fa12896300d3"
-                        })
                         .lessonChecklistItem(id: "lesson-video-2986f5bce841f5818da0")
                         .padding()
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Playalong%201e%20Medium.mp4?alt=media&token=760a66e6-cd4a-452e-a5c0-1dc6faf91a1e")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -774,9 +681,6 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.10%20Playalong%201e%20Medium.mp4?alt=media&token=760a66e6-cd4a-452e-a5c0-1dc6faf91a1e"
-                        })
                         .lessonChecklistItem(id: "lesson-video-2d141eef6d9a7a515c51")
                         .padding()
                         
@@ -796,7 +700,7 @@ struct Lesson_1: View {
                     
                     //1.11 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Greatest%20Day.mp4?alt=media&token=efd75a8e-b714-4bbf-9709-6cb906b0fa95")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -812,11 +716,8 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Greatest%20Day.mp4?alt=media&token=efd75a8e-b714-4bbf-9709-6cb906b0fa95"
-                        })
                         .lessonChecklistItem(id: "lesson-video-519a294b4e1dc7804f84")
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f.%20Slow.mp4?alt=media&token=1ea5f017-593b-4172-8ac7-a1024e62f878")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -827,13 +728,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f.%20Slow.mp4?alt=media&token=1ea5f017-593b-4172-8ac7-a1024e62f878"
-                        })
                         .lessonChecklistItem(id: "lesson-video-ec18d25c230c9f0df4be")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f%20Medium.mp4?alt=media&token=ef9beb37-6a18-46b5-bb90-638ac870069d")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -844,13 +742,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f%20Medium.mp4?alt=media&token=ef9beb37-6a18-46b5-bb90-638ac870069d"
-                        })
                         .lessonChecklistItem(id: "lesson-video-efcdafa852057bd642c3")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f%20Fast.mp4?alt=media&token=1fc20e50-c432-49fc-8ebb-25403133b823")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -861,9 +756,6 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.11%20Playalong%201f%20Fast.mp4?alt=media&token=1fc20e50-c432-49fc-8ebb-25403133b823"
-                        })
                         .lessonChecklistItem(id: "lesson-video-3729ef34653443f666cf")
                         .padding()
                         
@@ -882,7 +774,7 @@ struct Lesson_1: View {
 
                     //1.12links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Hornpipe.mp4?alt=media&token=c1e7e822-cae5-46db-a25a-92d9f33d0040")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -898,12 +790,9 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Hornpipe.mp4?alt=media&token=c1e7e822-cae5-46db-a25a-92d9f33d0040"
-                        })
                         .lessonChecklistItem(id: "lesson-video-a2011d29906382f2f921")
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Slow.mp4?alt=media&token=94aafa0e-a848-4315-966f-dfac0028bf42")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -914,13 +803,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Slow.mp4?alt=media&token=94aafa0e-a848-4315-966f-dfac0028bf42"
-                        })
                         .lessonChecklistItem(id: "lesson-video-7ccfdcd81c100a5e54b6")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Medium.mp4?alt=media&token=2e2d8fa7-8a67-40b2-8af3-d72a385f8cc2")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -931,13 +817,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Medium.mp4?alt=media&token=2e2d8fa7-8a67-40b2-8af3-d72a385f8cc2"
-                        })
                         .lessonChecklistItem(id: "lesson-video-7f22c6733125e0b99271")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Fast.mp4?alt=media&token=abba2eff-36e4-4e7a-8fa9-ae110dd9d5be")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -948,9 +831,6 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.12%20Playalong%201g%20Fast.mp4?alt=media&token=abba2eff-36e4-4e7a-8fa9-ae110dd9d5be"
-                        })
                         .lessonChecklistItem(id: "lesson-video-3edc26ed5b4cc6504a43")
                         .padding()
                         
@@ -969,7 +849,7 @@ struct Lesson_1: View {
                 
                     //1.13 links
                     VStack() {
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Twinkle%20Twinkle.mp4?alt=media&token=2d8892f5-21a2-4444-9980-3c8645464ef0")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -985,13 +865,10 @@ struct Lesson_1: View {
                                     .shadow(radius: 10, y: 10)
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Twinkle%20Twinkle.mp4?alt=media&token=2d8892f5-21a2-4444-9980-3c8645464ef0"
-                        })
                         .lessonChecklistItem(id: "lesson-video-4edb2e92e0d227e6a7e1")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Slow.mp4?alt=media&token=9b9ebe73-f736-418b-b654-5e16619b05c4")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -1002,13 +879,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Slow.mp4?alt=media&token=9b9ebe73-f736-418b-b654-5e16619b05c4"
-                        })
                         .lessonChecklistItem(id: "lesson-video-bb36fde272f9802471ee")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Medium.mp4?alt=media&token=2a19fb9e-9e88-4d5f-9588-5b1ecb58aaf3")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -1019,13 +893,10 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Medium.mp4?alt=media&token=2a19fb9e-9e88-4d5f-9588-5b1ecb58aaf3"
-                        })
                         .lessonChecklistItem(id: "lesson-video-4d5667809b3dda452689")
                         .padding()
                         
-                        NavigationLink(destination: VideoViewer(videoUrlAsString: $videoUrlAsString)) {
+                        NavigationLink(destination: VideoViewer(urlString: "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Fast.mp4?alt=media&token=e608e0b9-0098-4c60-a77f-383e5c3b798e")) {
                             VStack() {
                                 Text(Image(systemName: "video"))
                                     .foregroundStyle(Color.white) +
@@ -1036,9 +907,6 @@ struct Lesson_1: View {
                                 
                             }
                         }
-                        .simultaneousGesture(TapGesture().onEnded {
-                            videoUrlAsString = "https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/Lesson%201%2F1.13%20Playalong%201h%20Fast.mp4?alt=media&token=e608e0b9-0098-4c60-a77f-383e5c3b798e"
-                        })
                         .lessonChecklistItem(id: "lesson-video-569976fd2e8aaa1a0167")
                         .padding()
                         
@@ -1059,7 +927,6 @@ struct Lesson_1: View {
                 
             }
             .background(Image("Background"))
-        }
         .navigationTitle("")
         
         
@@ -1069,5 +936,5 @@ struct Lesson_1: View {
 
 
 #Preview {
-    Lesson_1(videoUrlAsString: .constant("https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/CMajScaleAndChordsEdited.mp4?alt=media&token=5c196198-0a29-4c22-a362-e5e555c7f65b"))
+    Lesson_1()
 }

@@ -7,18 +7,12 @@
 import SwiftUI
 
 struct Lesson_4: View {
-    /*
-     declare videoUrlAsString and bind to same variable as state in
-     maim app file
-     */
     
-    @Binding var videoUrlAsString: String
     
     //begin body of lesson 2
     
     var body: some View {
         
-        NavigationStack {
             
             ScrollView {
                 
@@ -61,9 +55,8 @@ struct Lesson_4: View {
             }
             .background(Image("Background"))
         }
-    }
 }
 
 #Preview {
-    Lesson_4(videoUrlAsString: .constant("https://firebasestorage.googleapis.com/v0/b/onlinepianolessons-b0cd6.appspot.com/o/CMajScaleAndChordsEdited.mp4?alt=media&token=5c196198-0a29-4c22-a362-e5e555c7f65b"))
+    Lesson_4()
 }
